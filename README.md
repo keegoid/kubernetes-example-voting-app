@@ -23,22 +23,22 @@ Run kubectl commands on GCP or AWS in the following sequence.
 ### voting-app (python)
 
 ```
-kubectl create -f voting-app-pod.yml --record
-kubectl create -f voting-app-service.yml --record
+kubectl create -f voting-app-pod.yml
+kubectl create -f voting-app-service.yml
 ```
 
 ### in-memory DB (redis)
 
 ```
-kubectl create -f redis-pod.yml --record
-kubectl create -f redis-service.yml --record
+kubectl create -f redis-pod.yml
+kubectl create -f redis-service.yml
 ```
 
 ### db (PostgreSQL)
 
 ```
-kubectl create -f postgres-pod.yml --record
-kubectl create -f postgres-service.yml --record
+kubectl create -f postgres-pod.yml
+kubectl create -f postgres-service.yml
 ```
 
 ### worker (.NET)
@@ -46,14 +46,14 @@ kubectl create -f postgres-service.yml --record
 No service here because no other components rely on the worker pod.
 
 ```
-kubectl create -f worker-app-pod.yml --record
+kubectl create -f worker-app-pod.yml
 ```
 
 ### result-app (NodeJS)
 
 ```
-kubectl create -f result-app-pod.yml --record
-kubectl create -f result-app-service.yml --record
+kubectl create -f result-app-pod.yml
+kubectl create -f result-app-service.yml
 ```
 
 ## The Docker Way

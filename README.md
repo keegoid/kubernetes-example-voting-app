@@ -1,4 +1,20 @@
-# Docker Voting App #
+# Docker Voting App
+
+__The Kubernetes Way__
+
+  1. [voting-app (python)](#voting-app-python)
+  1. [in-memory DB (redis)](#in-memory-db-redis)
+  1. [db (PostgreSQL)](#db-postgresql)
+  1. [worker (.NET)](#worker-net)
+  1. [result-app (NodeJS)](#result-app-nodejs)
+
+__The Docker Way__
+
+  1. [in-memory DB (redis)](#in-memory-db-redis-1)
+  1. [db (PostgreSQL)](#db-postgresql-1)
+  1. [voting-app (python)](#voting-app-python-1)
+  1. [result-app (NodeJS)](#result-app-nodejs-1)
+  1. [worker (.NET)](#worker-net-1)
 
 ## The Kubernetes Way
 
